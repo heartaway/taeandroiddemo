@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/com_taobao_tae_sdk_web_view_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="#f8f8f8" >
+
+    <Button
+        android:id="@+id/com_taobao_tae_sdk_web_view_title_bar_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/com_taobao_tae_sdk_web_view_title_bar_back" />
+
+    <TextView
+        android:id="@+id/com_taobao_tae_sdk_web_view_title_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="160dp"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:textColor="#3d4245"
+        android:textSize="18sp" />
+
+</RelativeLayout>

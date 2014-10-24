@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pinterest_content_is_item_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pinterest_item_margin_top"
+        android:layout_marginLeft="@dimen/pinterest_item_margin_left_and_right"
+        android:layout_marginRight="@dimen/pinterest_item_margin_left_and_right"
+        android:padding="@dimen/global_line_height"
+        android:background="@drawable/pinterest_item_border">
+
+        <com.taobao.tae.buyingdemo.view.TopConnerRoundImageView
+            android:id="@+id/item_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:layout_below="@+id/item_pic"
+            android:padding="@dimen/pinterest_item_info_padding"
+            android:textColor="@color/pinterest_item_title"
+            android:typeface="sans"
+            android:lineSpacingMultiplier="1.25"
+            android:textSize="@dimen/pinterest_item_title_size" />
+
+        <RelativeLayout
+            android:id="@+id/item_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_title"
+            android:paddingTop="@dimen/pinterest_item_margin_top"
+            android:paddingLeft="@dimen/pinterest_item_info_padding"
+            android:paddingRight="@dimen/pinterest_item_info_padding"
+            android:paddingBottom="@dimen/pinterest_item_info_padding">
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pinterest_item_price"
+                android:textSize="@dimen/pinterest_item_price_size" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/pinterest_item_bottom_line_margin_left_and_right"
+        android:layout_marginRight="@dimen/pinterest_item_bottom_line_margin_left_and_right"
+        android:background="@color/pinterest_item_border" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BuyingDemo</string>
+
+    <!-- Activity名称 -->
+    <string name="activity_name_of_index">IndexActivity</string>
+    <string name="activity_name_of_category">CategoryActivity</string>
+    <string name="activity_name_of_my">MyActivity</string>
+    <string name="activity_name_of_setting">SettingActivity</string>
+
+
+    <!-- 顶部导航-->
+    <string name="header_txt_of_index">TAE Demo</string>
+    <string name="header_txt_of_category">类目</string>
+    <string name="header_txt_of_my">我的</string>
+    <string name="header_txt_of_setting">设置</string>
+
+    <!-- 底部菜单文本-->
+    <string name="menu_txt_of_index">首页</string>
+    <string name="menu_txt_of_category">类目</string>
+    <string name="menu_txt_of_my">我的</string>
+
+    <string name="homepage_update">更新</string>
+
+    <!-- 分类顶部默认的搜索背景文案-->
+    <string name="search_default_text">敬请期待</string>
+    <string name="setting_txt_of_logout">退出</string>
+
+    <!--Crash-->
+    <string name="crash_dialog_title">程序出现异常</string>
+    <string name="crash_dialog_text">一个不期望的异常导致程序停止运行，点击“确定”，帮助我们修复此问题。</string>
+
+</resources>

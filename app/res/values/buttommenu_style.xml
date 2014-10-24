@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 底部菜单样式 -->
+    <style name="button_menu">
+        <item name="android:layout_height">@dimen/menu_height</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="button_menu_element">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/menu_button</item>
+    </style>
+
+    <style name="button_menu_element.index">
+        <item name="android:src">@drawable/menu_index_icon</item>
+    </style>
+
+    <style name="button_menu_element.category">
+        <item name="android:src">@drawable/menu_category_icon</item>
+    </style>
+    <style name="button_menu_element.my">
+        <item name="android:src">@drawable/menu_my_icon</item>
+    </style>
+
+    <style name="button_menu_element.index.with_subtitle">
+        <item name="android:drawableTop">@drawable/menu_index_icon</item>
+        <item name="android:text">@string/menu_txt_of_index</item>
+        <item name="android:textSize">@dimen/menu_txt_size</item>
+        <item name="android:paddingTop">@dimen/menu_margin_top</item>
+    </style>
+
+    <style name="button_menu_element.category.with_subtitle">
+        <item name="android:drawableTop">@drawable/menu_category_icon</item>
+        <item name="android:text">@string/menu_txt_of_category</item>
+        <item name="android:textSize">@dimen/menu_txt_size</item>
+        <item name="android:paddingTop">@dimen/menu_margin_top</item>
+    </style>
+
+    <style name="button_menu_element.my.with_subtitle">
+        <item name="android:drawableTop">@drawable/menu_my_icon</item>
+        <item name="android:text">@string/menu_txt_of_my</item>
+        <item name="android:textSize">@dimen/menu_txt_size</item>
+        <item name="android:paddingTop">@dimen/menu_margin_top</item>
+    </style>
+
+
+
+</resources>

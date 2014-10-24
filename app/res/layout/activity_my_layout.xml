@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pinterest_backgroud">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/global_color">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/header_txt_of_my"
+            android:textSize="@dimen/header_txt_size"
+            android:textStyle="bold"
+            android:textColor="@color/header_txt_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_bottom_line_height"
+        android:background="@color/header_bottom_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/my_avatar_nick_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:background="@color/my_information_bg">
+
+        <ImageView
+            android:id="@+id/my_avatar_img"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="30dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/my_avatar_img"/>
+
+        <TextView
+            android:id="@+id/my_nick_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dip"
+            android:textColor="@color/my_nick_txt_color"
+            android:layout_marginLeft="20dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/my_avatar_img" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_avatar_nick_bg"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/pinterest_backgroud" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_item_height"
+            android:background="@color/white">
+
+            <View
+                android:layout_height="@dimen/global_line_height"
+                android:background="@color/global_single_line"
+                android:layout_width="fill_parent"
+                android:layout_alignParentTop="true"></View>
+
+            <TextView
+                android:id="@+id/personal_center_setting_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/my_item_text_margin_left"
+                android:gravity="center_vertical"
+                android:text="设置"
+                android:textSize="14dp"
+                android:clickable="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/my_item_text_margin_left"
+                android:layout_centerVertical="true"
+                android:background="@drawable/item_arrow_right" />
+
+            <View
+                android:layout_height="@dimen/global_line_height"
+                android:background="@color/global_single_line"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"></View>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

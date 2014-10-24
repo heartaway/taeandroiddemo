@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/category_parent_item_width"
+              android:layout_height="@dimen/category_parent_item_height"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/category_parent_btn_ly"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/pinterest_backgroud">
+        <!-- 默认隐藏，当选中后显示-->
+        <View android:id="@+id/left_indicator_line"
+              android:layout_width="@dimen/category_parent_item_left_indicator_line"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:visibility="gone"
+              android:background="@color/category_item_select_indecator"/>
+
+        <TextView
+                android:id="@+id/category_name_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="@dimen/category_parent_item_font"
+                android:textColor="@color/global_font"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        <!-- 默认显示，当选中后隐藏-->
+        <View android:id="@+id/right_indicator_line"
+              android:layout_width="@dimen/global_line_height"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:background="@color/cateogry_divide_line"/>
+
+        <View android:id="@+id/bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/global_line_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/cateogry_divide_line"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

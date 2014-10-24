@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  多套皮肤的替换方法：①从 assets/theme目录中找到期望的颜色目录，将里面的app_theme.xml文件拷贝到values目录中。②将 图片资源拷贝到drawable-xhdpi目录，替换已有的文件 -->
+
+    <!-- 全局配置 -->
+    <color name="global_color">#FFF</color><!--全局颜色（顶部导航颜色）-->
+    <color name="global_single_line">#d9d9d9</color><!-- 全局 分割线 -->
+    <color name="global_font">#000</color><!-- 全局通用字体颜色-->
+    <color name="global_alpha_line">#40000000</color><!-- 全局 25%透明，线颜色-->
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="global_conner_radius">2dp</dimen>
+    <dimen name="global_line_height">0.5dp</dimen>
+    <color name="underline_text_color">#000</color>
+
+    <!--  顶部Header -->
+    <color name="header_txt_color">#000</color><!-- 顶部Header的文本颜色 -->
+    <color name="header_bottom_line_color">@color/global_single_line</color><!-- header 下方的横线 -->
+    <dimen name="header_bottom_line_height">@dimen/global_line_height</dimen><!-- header 下方的横线 -->
+    <dimen name="header_height">43dp</dimen><!--顶部Header高度-->
+    <dimen name="header_txt_size">17dp</dimen><!--顶部Header文本大小-->
+
+
+
+    <!-- Toast -->
+    <color name="app_toast_border">@color/global_color</color>
+    <color name="app_toast_text">#ffffff</color>
+    <dimen name="toast_height">20dp</dimen> <!-- toast 高度-->
+
+
+    <!-- 底部菜单 选中状态文本颜色-->
+    <color name="menu_bg">#FFF</color>
+    <color name="menu_btn_selected">#000</color>
+    <color name="menu_btn_unselect">#a6a6a6</color>
+    <dimen name="menu_height">44dp</dimen> <!--底部菜单高度-->
+    <dimen name="menu_margin_top">6dp</dimen> <!--底部菜单中文本与图片的间距-->
+    <dimen name="menu_txt_size">9dp</dimen><!--底部菜单中文本字体大小-->
+
+
+
+    <!-- 首页图片轮播 指示器（几个小圆点）的填充颜色-->
+    <color name="homepage_banner_indicatore_fill_color">#c7c7c7</color>
+    <color name="homepage_banner_background_color">#FFF</color>
+    <dimen name="homepage_banner_height">200dp</dimen><!-- 图片轮播的高度 ：用户服务端上传图片大小：520 × 290  -->
+
+
+    <!-- ##########  瀑布流   ##########-->
+    <!-- 商品列表中图片建议大小： 450px × 600px-->
+    <color name="homepage_upate_time">#2f2f2f</color><!-- 首页更新时间字体时间 -->
+    <dimen name="homepage_update_time_number">21dp</dimen><!-- 首页更新时间数字字大小-->
+    <dimen name="homepage_update_time_word">20dp</dimen><!-- 首页更新时间文字字大小-->
+    <dimen name="homepage_update_time_small">12dp</dimen>
+    <dimen name="homepage_update_time_middle_space">0dp</dimen>
+    <dimen name="homepage_update_time_top_space">8dp</dimen>
+    <dimen name="homepage_update_time_bottom_space">4dp</dimen>
+    <!-- 瀑布流背景色 -->
+    <color name="pinterest_backgroud">#eeeeee</color>
+    <!-- 瀑布流中商品的边框-->
+    <color name="pinterest_item_border">#e0e0de</color>
+    <!-- 瀑布流中商品标题-->
+    <color name="pinterest_item_title">#5b5b5b</color>
+    <!-- 瀑布流中商品价格-->
+    <color name="pinterest_item_price">#5b5b5b</color>
+    <!-- 瀑布流中商品喜欢数-->
+    <color name="pinterest_item_favour">#999898</color>
+    <!-- 瀑布流上Item 的间距 -->
+    <dimen name="pinterest_item_margin_left_and_right">4dp</dimen>
+    <dimen name="pinterest_item_bottom_line_margin_left_and_right">6dp</dimen><!-- 底部边线 -->
+    <dimen name="pinterest_item_margin_top">8dp</dimen>
+    <dimen name="pinterest_item_border_conner_radius">@dimen/global_conner_radius</dimen><!-- 瀑布流上边框的圆角 -->
+    <dimen name="pinterest_image_conner_radius">0.3dp</dimen><!-- 瀑布流上图片的圆角 -->
+    <dimen name="pinterest_item_title_size">12dp</dimen><!-- 瀑布流上标题的字体大小 -->
+    <dimen name="pinterest_item_price_size">11sp</dimen><!-- 瀑布流上价格的字体大小 -->
+    <dimen name="pinterest_item_info_padding">8dp</dimen><!-- 商品信息之间的间距 -->
+
+
+    <!-- ########## 商品详情页 ########## -->
+    <!-- 顶部返回按钮背景色,透明度为73% -->
+    <color name="detail_back_btn_bg">#ba000000</color>
+    <!-- 商品SKU展示时背景浮层的透明颜色-->
+    <color name="detail_sku_out_bg_shadow">#b3000000</color>
+    <color name="detail_sku_unselect_border">#c8c8c8</color>
+    <color name="detail_sku_count_enable_border">#7c7c7c</color>
+    <color name="detail_sku_count_disable_border">#c8c8c8</color>
+    <color name="detail_sku_select_border">#000</color>
+    <color name="detail_sku_select_text_color">#000</color>
+    <dimen name="detail_more_info_title_size">14dp</dimen><!-- 图文信息、评价详情等字体大小-->
+    <dimen name="detail_more_info_title_underline_append_size">12dp</dimen><!-- 图文信息、评价详情等字体下的下划线比字体的长度多出的部分长度-->
+    <dimen name="detail_more_info_title_bottom_line_margin_top">11dp</dimen>
+    <dimen name="detail_more_info_text_word_padding">10dp</dimen>
+    <dimen name="detail_more_info_title_bottom_line_height">2dp</dimen>
+    <dimen name="detail_more_info_text_word_size">12sp</dimen>
+    <dimen name="detail_more_info_title_height">42dp</dimen>
+    <dimen name="detail_sku_panel_dynamic_fill_margin_left_right">8dp</dimen><!-- 动态渲染SKU面板左右间距 -->
+    <dimen name="detail_sku_title_size">16dp</dimen>
+    <dimen name="detail_sku_property_size">12dp</dimen>
+    <dimen name="detail_sku_title_margin_top">12dp</dimen>
+    <dimen name="detail_sku_line_margin_top">16dp</dimen>
+    <dimen name="detail_sku_line_height">@dimen/global_line_height</dimen>
+    <dimen name="detail_sku_property_btn_height">32dp</dimen>
+    <dimen name="detail_sku_property_btn_margin_right">8dp</dimen>
+    <dimen name="detail_sku_property_btn_margin_top">8dp</dimen>
+    <dimen name="detail_first_sreen_height">154dp</dimen>
+
+
+    <!--########## 分类 ##########-->
+    <!-- 二级分类名称-->
+    <color name="category_child_item_name">#000</color>
+    <color name="category_search_input_border">#40000000</color>
+    <color name="cateogry_divide_line">#c7c7c7</color>
+    <color name="category_item_select_indecator">#000</color>
+    <dimen name="category_parent_item_width">78dp</dimen>
+    <dimen name="category_parent_item_height">46dp</dimen>
+    <dimen name="category_parent_item_right_line_width">77.25dp</dimen>
+    <dimen name="category_parent_item_left_indicator_line">3dp</dimen>
+    <dimen name="category_parent_item_font">14dp</dimen>
+    <dimen name="category_child_item_width">76dp</dimen>
+    <dimen name="category_child_item_image_height">76dp</dimen>
+    <dimen name="category_child_item_text_height">26dp</dimen>
+    <dimen name="category_child_item_margin">8dp</dimen>
+    <dimen name="category_child_item_text_size">12dp</dimen>
+    <color name="search_under_line">#40000000</color> <!-- 搜索下方边线 25% 透明-->
+    <dimen name="search_result_sort_type_title_size">12dp</dimen><!-- 搜索结果页排序方式：最新、销量、价格字体大小-->
+    <dimen name="search_result_sort_type_underline_append_size">14dp</dimen><!-- 搜索结果页排序方式下的下划线比字体的长度多出的部分长度-->
+    <dimen name="search_result_sort_type_title_bottom_line_margin_top">11dp</dimen>
+    <dimen name="search_result_sort_type_title_bottom_line_height">2dp</dimen>
+
+
+    <!-- 我的 -->
+    <color name="my_information_bg">#fff</color>
+    <color name="my_nick_txt_color">#000</color>
+    <color name="setting_logout_btn">#000</color>
+    <dimen name="my_item_height">41dp</dimen>
+    <dimen name="my_item_text_margin_left">16dp</dimen>
+
+
+
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+
+
+    <!-- 展示 商品SKU 属性时的淡入淡出效果动画-->
+    <style name="item_sku_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+</resources>

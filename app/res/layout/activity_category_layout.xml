@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/global_color">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/menu_txt_of_category"
+            android:textSize="@dimen/header_txt_size"
+            android:textStyle="bold"
+            android:textColor="@color/header_txt_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_bottom_line_height"
+        android:background="@color/header_bottom_line_color" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/category_search_input_view_id"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/category_search_input_shape">
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/search_icon" />
+
+        <TextView
+            android:layout_toRightOf="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="搜索"
+            android:textSize="14sp"
+            android:textColor="#999898" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/global_line_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/category_search_input_border" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pinterest_backgroud"
+            android:orientation="vertical">
+
+            <com.taobao.tae.buyingdemo.view.ParentCategoryListView
+                android:id="@+id/category_tree_list"
+                android:layout_width="@dimen/category_parent_item_width"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0dp"
+                android:divider="@null"
+                android:scrollbars="none"></com.taobao.tae.buyingdemo.view.ParentCategoryListView>
+
+            <View
+                android:layout_width="@dimen/global_line_height"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/category_parent_item_right_line_width"
+                android:background="@color/cateogry_divide_line" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/child_category_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

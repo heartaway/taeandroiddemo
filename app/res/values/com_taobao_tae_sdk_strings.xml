@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="com_taobao_tae_sdk_login_progress_message">登录中</string>
+    <string name="com_taobao_tae_sdk_loading_progress_message">加载中</string>
+    <string name="com_taobao_tae_sdk_authorize_title">登录授权</string>
+    <string name="com_taobao_tae_sdk_system_exception">系统异常</string>
+    <string name="com_taobao_tae_sdk_trade_confirm_progress_message">交易确认中</string>
+    <string name="com_taobao_tae_sdk_trade_title">确认下单</string>
+    <string name="com_taobao_tae_sdk_alert">提示</string>
+    <string name="com_taobao_tae_sdk_confirm">确认</string>
+
+</resources>

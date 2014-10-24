@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/underline_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/global_font"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/underline_line"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/underline_text_color"
+        android:orientation="horizontal"
+        android:clickable="false"/>
+
+</LinearLayout>

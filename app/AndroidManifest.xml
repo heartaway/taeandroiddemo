@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taobao.tae.buyingdemo"
+    android:versionCode="1"
+    android:versionName="0.9">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name=".app.BuyingDemoApplication"
+        android:label="@string/app_name"
+        android:icon="@drawable/app_icon"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.BaseActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.IndexActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.CategoryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MyActivity"/>
+        <activity
+            android:name=".activity.ItemWebviewActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ItemDetailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SearchResultSortActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SettingActivity" android:screenOrientation="portrait" />
+
+        <!--&lt;!&ndash; message reciever &ndash;&gt;-->
+        <!--<receiver android:name="com.taobao.tae.buyingdemo.push.MessageReciever">-->
+            <!--<intent-filter>-->
+                <!--&lt;!&ndash; 消息处理事件（用来弹出消息提醒以及收取应用的自定义消息，必选。） &ndash;&gt;-->
+                <!--<action android:name="com.alibaba.cchannel.action.NOTIFICATION" />-->
+                <!--&lt;!&ndash; 通道被打开的事件，应用可以用来缓存当前收到的通知（可选） &ndash;&gt;-->
+                <!--<action android:name="com.alibaba.cchannel.action.NOTIFICATION_OPENED" />-->
+                <!--&lt;!&ndash; 通知从通知栏删除的事件（可选） &ndash;&gt;-->
+                <!--<action android:name="com.alibaba.cchannel.action.NOTIFICATION_REMOVED" />-->
+                <!--&lt;!&ndash; 通道状态切换事件（应用端可以根据此状态来显示当前的通道健康状态，需要继承CPushMessageReceiver并重载onChannelStatusChanged方法，可选。）&ndash;&gt;-->
+                <!--<action android:name="com.alibaba.cchannel.action.CHANNEL_STATUS" />-->
+                <!--&lt;!&ndash; 开屏事件（用来尝试唤起已经不可用的服务，可选。建议打开） &ndash;&gt;-->
+                <!--<action android:name="android.intent.action.USER_PRESENT" />-->
+                <!--&lt;!&ndash; 开机事件（用来在手机重启后，自动启动云通道后台服务，可选。建议打开） &ndash;&gt;-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--&lt;!&ndash; 服务配置 &ndash;&gt;-->
+        <!--<service android:name="com.alibaba.cchannel.core.ServiceContainer"-->
+            <!--android:process=":cpushRemote"-->
+            <!--android:exported="true">-->
+        <!--<intent-filter>-->
+            <!--<action android:name="com.alibaba.cchannel.action.SERVICE_CONTAINER" />-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+
+         <!-- Crash report -->
+        <activity android:name="org.acra.CrashReportDialog"
+            android:theme="@android:style/Theme.Holo.Light.DialogWhenLarge"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> 
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

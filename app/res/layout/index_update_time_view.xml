@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/homepage_update_time_layout_id">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/update_time_widget"
+            android:layout_marginTop="@dimen/homepage_update_time_top_space"
+            android:layout_marginBottom="@dimen/homepage_update_time_bottom_space">
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/homepage_update_time_header"
+                      android:layout_centerHorizontal="true">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/homepage_update_time_time"
+                      android:text="10:00"
+                      android:textSize="@dimen/homepage_update_time_number"
+                      android:textColor="@color/homepage_upate_time"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/homepage_update"
+                      android:textSize="@dimen/homepage_update_time_word"
+                      android:textColor="@color/homepage_upate_time"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/homepage_update_time_header"
+                      android:layout_marginTop="@dimen/homepage_update_time_middle_space"
+                      android:layout_centerHorizontal="true">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/homepage_update_time_date"
+                      android:text="14/08"
+                      android:textSize="@dimen/homepage_update_time_small"
+                      android:textColor="@color/homepage_upate_time"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/homepage_update_time_week"
+                      android:text="周四"
+                      android:textSize="@dimen/homepage_update_time_small"
+                      android:textColor="@color/homepage_upate_time"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

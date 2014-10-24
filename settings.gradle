@@ -1,0 +1,2 @@
+include ':app', ':TaeSDK'
+project(':TaeSDK').projectDir = new File('libraries/TaeSDK')

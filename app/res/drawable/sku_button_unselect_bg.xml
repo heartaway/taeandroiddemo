@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<solid android:color="#ffffff"/>
+<stroke android:width="@dimen/global_line_height" android:color="@color/detail_sku_unselect_border"/>
+<corners android:topLeftRadius="@dimen/global_conner_radius"
+         android:topRightRadius="@dimen/global_conner_radius"
+         android:bottomRightRadius="@dimen/global_conner_radius"
+         android:bottomLeftRadius="@dimen/global_conner_radius"/>
+<padding android:left="16dp"
+         android:right="16dp"/>
+</shape>
